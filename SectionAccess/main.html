@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <!-- link for jquery style -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="assets/js/geodatasource-cr.min.js"></script>
+    <link rel="stylesheet" href="assets/css/geodatasource-countryflag.css">
+
+    <!-- link for semantic-ui style -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+
+    <!-- link to languages po files -->
+    <link rel="gettext" type="application/x-po" href="languages/en/LC_MESSAGES/en.po" />
+    <script type="text/javascript" src="assets/js/Gettext.js"></script>
+  </head>
+  <body>
+
+    <div>
+        Country: <select class="gds-cr" country-data-region-id="gds-cr-one" data-language="en"></select>
+
+        Region: <select id="gds-cr-one" ></select>
+    </div>
+
+    <div>
+        Country: <select class="gds-cr" country-data-region-id="gds-cr-two" data-language="en" country-data-default-value="US" ></select>
+
+        Region: <select id="gds-cr-two" region-data-default-value="California" ></select>
+    </div>
+
+    <div>
+        Country: <select class="gds-cr gds-countryflag" country-data-region-id="gds-cr-three" data-language="en"></select>
+
+        Region: <select id="gds-cr-three"></select>
+    </div>
+
+    <div>
+        Country: <div class="ui fluid search selection dropdown gds-cr-semantic" country-data-region-id="gds-cr-four" data-language="en"></div>
+
+        Region: <select id="gds-cr-four"></select>
+    </div>
+
+  </body>
+</html>
